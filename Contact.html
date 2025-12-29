@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masculine/contact</title>
+    <link rel="stylesheet" href="../css/contact.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="home.html"><i class="fa-solid fa-house"></i></a>
+          </li>
+          <li>
+            <a href="About.html"><i class="fa-solid fa-circle-info"></i></a>
+          </li>
+          <li>
+            <a href="Shop.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
+          </li>
+          <li>
+            <a href="Account.html"><i class="fa-solid fa-user"></i></a>
+          </li>
+          <li>
+            <a href="Contact.html"><i class="fa-solid fa-phone"></i></a>
+          </li>
+        </ul>
+
+        <a href="settings.html" id="settings-icon">
+          <i class="fa-solid fa-gear"></i>
+        </a>
+      </nav>
+    </header>
+    <h2>Having a problem/feedback/question? Contact us!</h2>
+    <br />
+    <form action="submit" id="contact">
+      <div class="contact-info">
+        <p>Name:</p>
+        <input type="text" placeholder="Enter your name" maxlength="40" />
+      </div>
+      <div class="contact-info">
+        <p>Email:</p>
+        <input type="text" placeholder="Enter your email" maxlength="40" />
+      </div>
+      <div class="contact-info">
+        <p>Phone Number:</p>
+        <input type="text" placeholder="+20 XXX XXX XXXX" maxlength="20" />
+      </div>
+      <div class="contact-info">
+        <p>Question/Problem:</p>
+        <textarea
+          name="description"
+          id="question-input"
+          placeholder="Describe your case briefly"
+        ></textarea>
+      </div>
+      <button id="submit-button">Submit</button>
+    </form>
+  </body>
+</html>

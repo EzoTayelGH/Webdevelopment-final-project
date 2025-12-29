@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masculine/home</title>
+    <link rel="stylesheet" href="../css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-light.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="home.html"><i class="fa-solid fa-house"></i></a>
+          </li>
+          <li>
+            <a href="About.html"><i class="fa-solid fa-circle-info"></i></a>
+          </li>
+          <li>
+            <a href="Shop.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
+          </li>
+          <li>
+            <a href="Account.html"><i class="fa-solid fa-user"></i></a>
+          </li>
+          <li>
+            <a href="Contact.html"><i class="fa-solid fa-phone"></i></a>
+          </li>
+        </ul>
+
+        <a href="settings.html" id="settings-icon">
+          <i class="fa-solid fa-gear"></i>
+        </a>
+      </nav>
+    </header>
+
+    <section class="categories-section">
+      <h2 class="section-title">Shop by Category</h2>
+      <div class="carousel-container">
+        <button class="carousel-btn prev" onclick="scrollCarousel(-1)">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="categories-grid" id="categoryCarousel">
+          <div class="category-card">
+            <div class="category-image">
+              <i class="fa-solid fa-shirt"></i>
+            </div>
+            <div class="category-info">
+              <h3>T-Shirts</h3>
+              <p>Comfortable and stylish everyday wear</p>
+              <button class="category-btn">Browse</button>
+            </div>
+          </div>
+
+          <div class="category-card">
+            <div class="category-image">
+              <i class="fa-solid fa-vest"></i>
+            </div>
+            <div class="category-info">
+              <h3>Jackets</h3>
+              <p>Premium outerwear for all seasons</p>
+              <button class="category-btn">Browse</button>
+            </div>
+          </div>
+
+          <div class="category-card">
+            <div class="category-image">
+              <i class="fa-solid fa-person"></i>
+            </div>
+            <div class="category-info">
+              <h3>Pants</h3>
+              <p>From casual to formal, we've got you covered</p>
+              <button class="category-btn">Browse</button>
+            </div>
+          </div>
+
+          <div class="category-card">
+            <div class="category-image">
+              <i class="fa-solid fa-shoe-prints"></i>
+            </div>
+            <div class="category-info">
+              <h3>Footwear</h3>
+              <p>Step up your shoe game</p>
+              <button class="category-btn">Browse</button>
+            </div>
+          </div>
+
+          <div class="category-card">
+            <div class="category-image">
+              <i class="fa-solid fa-watch"></i>
+            </div>
+            <div class="category-info">
+              <h3>Accessories</h3>
+              <p>Complete your look with style</p>
+              <button class="category-btn">Browse</button>
+            </div>
+          </div>
+
+          <div class="category-card">
+            <div class="category-image">
+              <i class="fa-solid fa-gem"></i>
+            </div>
+            <div class="category-info">
+              <h3>Premium</h3>
+              <p>Luxury items for the distinguished</p>
+              <button class="category-btn">Browse</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn next" onclick="scrollCarousel(1)">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+    <div class="explore-section"></div>
+    <footer>&copy; 2025 Masculine Life. All rights reserved.</footer>
+  </body>
+</html>
