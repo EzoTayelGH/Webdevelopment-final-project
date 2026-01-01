@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, black, rgb(31, 30, 30));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: black;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        gap: 10px;
+    }
+
+        nav ul li a {
+            display: block;
+            color: #f0f0f0;
+            text-decoration: none;
+            padding: 15px 20px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            border-bottom: 3px solid transparent;
+        }
+
+            nav ul li a:hover {
+                background-color: #2a2a2a;
+                border-bottom: 3px solid #d4af37;
+                color: #d4af37;
+            }
+
+#settings-icon {
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+    #settings-icon:hover {
+        color: #d4af37;
+    }
+
+#signUpHeading {
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.5), 0 0 40px rgba(212, 175, 55, 0.3);
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+#login-page {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto 100px;
+    padding: 40px;
+    background: linear-gradient(135deg, rgba(42, 42, 42, 0.8), rgba(20, 20, 20, 0.9));
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(212, 175, 55, 0.2);
+    border: 2px solid rgba(212, 175, 55, 0.3);
+}
+
+    #login-page label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #d4af37;
+        font-size: 16px;
+    }
+
+    #login-page .input-field,
+    #login-page input[type="text"],
+    #login-page input[type="password"],
+    #login-page input[type="email"],
+    #login-page input[type="tel"] {
+        width: 100%;
+        padding: 12px 15px;
+        margin-bottom: 20px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid rgba(212, 175, 55, 0.3);
+        border-radius: 8px;
+        box-sizing: border-box;
+        font-size: 16px;
+        transition: all 0.3s ease;
+    }
+
+        #login-page .input-field:focus,
+        #login-page input:focus {
+            border-color: #d4af37;
+            outline: none;
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+        }
+
+    #login-page input::placeholder {
+        color: #666;
+    }
+
+/* Button styling */
+#btnSignup,
+.btnSignup {
+    width: 100%;
+    padding: 15px;
+    background: transparent;
+    border: 2px solid #d4af37;
+    color: #d4af37;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+    #btnSignup:hover,
+    .btnSignup:hover {
+        background: #d4af37;
+        color: black;
+        transform: scale(1.02);
+    }
+
+/* Error label styling */
+#ErrorLabel,
+.error-label {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: rgba(139, 0, 0, 0.2);
+    border: 1px solid #8b0000;
+    color: #ff4444 !important;
+}
+
+/* Success label styling */
+#SuccessLabel,
+.success-label {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: rgba(0, 139, 0, 0.2);
+    border: 1px solid #008b00;
+    color: #44ff44 !important;
+}
+
+/* Link styling */
+#login-page p {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#login-page a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+    #login-page a:hover {
+        color: #f0e68c;
+        text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+    }
+
+@media (max-width: 768px) {
+    #signUpHeading {
+        font-size: 2rem;
+        margin-top: 80px;
+    }
+
+    #login-page {
+        width: 95%;
+        padding: 30px 20px;
+    }
+}

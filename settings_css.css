@@ -1,0 +1,110 @@
+body {
+  background: linear-gradient(to right, black, rgb(31, 30, 30));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+p,
+h1,
+h2 {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background-color: black;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 10px;
+}
+
+nav ul li a {
+  display: block;
+  color: #f0f0f0;
+  text-decoration: none;
+  padding: 15px 20px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+}
+
+nav ul li a:hover {
+  background-color: #2a2a2a;
+  border-bottom: 3px solid #d4af37;
+  color: #d4af37;
+}
+
+#settings-icon {
+  color: #f0f0f0;
+  text-decoration: none;
+  padding: 15px 20px;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+#settings-icon:hover {
+  color: #d4af37;
+}
+
+#all-settings {
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.settings-config {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid white;
+}
+
+.settings-config:last-child {
+  border-bottom: none;
+}
+
+.settings-config p {
+  /*display: inline;*/
+  margin-right: 2vw;
+}
+
+.settings-config button {
+  background-color: #2a2a2a;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 1vw;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#notify {
+  background-color: #2a2a2a;
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.log-out {
+  background-color: rgb(124, 10, 10);
+  margin-top: 3vh;
+}
