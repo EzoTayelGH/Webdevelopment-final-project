@@ -11,7 +11,7 @@ namespace Masculinezft
 {
 
 
-    public partial class Contact
+    public partial class home
     {
 
         /// <summary>
@@ -24,57 +24,39 @@ namespace Masculinezft
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// SuccessLabel control.
+        /// currentAccountSection control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label SuccessLabel;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl currentAccountSection;
 
         /// <summary>
-        /// txtName control.
+        /// lblCurrentAccount control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtName;
+        protected global::System.Web.UI.WebControls.Label lblCurrentAccount;
 
         /// <summary>
-        /// txtEmail control.
+        /// CategoryRepeater control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmail;
+        protected global::System.Web.UI.WebControls.Repeater CategoryRepeater;
 
         /// <summary>
-        /// txtPhone control.
+        /// ProductRepeater control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPhone;
-
-        /// <summary>
-        /// txtMessage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMessage;
-
-        /// <summary>
-        /// submit_button control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submit_button;
+        protected global::System.Web.UI.WebControls.Repeater ProductRepeater;
     }
 }
